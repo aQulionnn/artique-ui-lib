@@ -1,7 +1,7 @@
 {
-  "name": "artique-shared-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@aqulionnn/artique-ui-lib",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,5 +14,23 @@
   "devDependencies": {
     "typescript": "~5.9.3",
     "vite": "^7.1.7"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aQulionnn/artique-ui-lib.git"
+  },
+  "keywords": [
+    "artique",
+    "lit"
+  ],
+  "author": "aQulionnn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aQulionnn/artique-ui-lib/issues"
+  },
+  "homepage": "https://github.com/aQulionnn/artique-ui-lib#readme"
 }
