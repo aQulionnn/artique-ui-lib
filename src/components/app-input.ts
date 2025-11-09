@@ -27,9 +27,9 @@ export class AppInput extends LitElement {
         }    
     `
 
-    @property() type = '';
-    @property() label = '';
-    @property() value = '';
+    @property({ type: String }) type = '';
+    @property({ type: String }) label = '';
+    @property({ type: String }) value = '';
 
     private onInput(event: Event) {
         const target = event.target as HTMLInputElement;
@@ -45,5 +45,11 @@ export class AppInput extends LitElement {
                 <input type=${this.type} .value=${this.value} @input=${this.onInput} />
             </label>       
         `
+    }
+}
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'app-input': AppInput;
     }
 }

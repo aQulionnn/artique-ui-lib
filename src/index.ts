@@ -1,1 +1,1 @@
-export * from './components/app-input';
+export { AppInput } from './components/app-input';

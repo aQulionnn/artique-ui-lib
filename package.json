@@ -3,6 +3,19 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
+  "main": "./dist/artique-ui.umd.js",
+  "module": "./dist/artique-ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/artique-ui.es.js",
+      "require": "./dist/artique-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,16 +29,12 @@
     "vite": "^7.1.7"
   },
   "description": "",
-  "main": "index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aQulionnn/artique-ui-lib.git"
   },
   "keywords": [
-    "artique",
-    "lit"
+    "artique"
   ],
   "author": "aQulionnn",
   "license": "ISC",
